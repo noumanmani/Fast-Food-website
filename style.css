@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+nav{
+    width: calc(100vw - 30px);
+    height: 110px;
+    color: rgb(0, 0, 0);
+    /* background: linear-gradient(95deg, #e8b724, #ff1900); */
+    display: flex;
+    padding-left: 2%;
+    padding-top: 1rem;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 4rem;
+    display: inline;
+}
+.logo #btn1{
+    height: 3rem;
+    width: 9rem;
+    border: 3px solid #ff1900;
+    margin-left: 1rem;
+}
+.logo #btn{
+    width: 6rem;
+    height: 3rem;
+    background-color:#ff1900;
+    border: none;
+    margin-left: 1rem;
+}
+.right-side{
+    margin-left: auto;
+    padding-right: 3%;
+}
+.right-side #log{
+    width: 4rem;
+    height: 4rem;
+    background-color: #ff1900;
+    margin-top: 5px;
+    border-radius: 14px;
+}
+@media(max-width:500px){
+#sceand-image{
+margin:-4rem 0 0 20rem;
+    }
+    nav{
+        background: linear-gradient(95deg, #ffffff, #ffffff);
+        width: 5rem;
+       height: 40px;
+    }
+    #sceand-image{
+        display: none;
+    }
+    button{
+        display: none;
+    }
+    .right-side{
+        display: none;
+    }
+    nav{
+        margin-top: 0;
+    }
+    .onlist{
+    color: green;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 2%;
+
+
+    flex-wrap: wrap;
+    background-color: #ff1900;
+    }
+    .onlist .block ul{
+        width: 100vw;
+    }
+    .onlist .block ul li a{
+        width: 100vw;
+        display: inline;
+        
+    }
+    .on{
+        position: absolute;
+        width: 100%;
+    }
+}
+.onlist{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    width: 25%;
+    height: 38%;
+    padding-left: 1rem;
+    display: none;
+}
+.on{
+    display: block;
+    position:absolute;
+    top: 0;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: 38%;
+} 
+/* ----------------------------------------------------toogle ---------------------- */
+.onlist #onlist-btn{
+    background-color: #ff1900;
+    width: 4rem;
+    height: 3rem;
+    margin:2rem 2rem;
+    border-radius: 7px;
+}
+.onlist hr{
+    color: black;
+    margin-top: 2rem;
+    height: 2px;
+}
+.onlist ul img{
+    width: 2rem;
+    height: 2.5rem;
+     
+}
+ul li{
+    display: flex;
+    cursor: pointer;
+    padding: 0.7rem;
+}
+li{
+    font-size: 1.5rem;
+}
+.onlist ul li:hover{
+    background-color: rgb(144, 143, 143);
+    cursor: pointer;
+}
+.block{
+    margin-top: 2rem;
+}
+.reorder{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.reorder button{
+    width: 40rem;
+    height: 2.4rem;
+    background-color: #ff1900;
+    color: black;
+    border-radius: 5px;
+
+}
+.reorder:hover{
+    letter-spacing: 7px;
+}
+
+
+/* slider  */
+.slider{
+	position: relative;
+	width: 100vw;
+	margin: auto;
+	overflow: hidden;
+}
+.slides img{
+width: 100vw;
+display: none;
+}
+img.displaySlide{
+	display: block;
+	animation-name:fade;
+	animation-duration: 1.5s;
+}
+.slider button{
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2rem;
+	border: none;
+	background-color: red;
+	color: aliceblue;
+	cursor: pointer;
+	padding: 10px 10px;
+}
+.prev{
+left: 0;
+}
+.next{
+right: 0;
+}
+@keyframes fade {
+	form{
+		opacity: .5;
+	}
+	to{
+		opacity: 1;
+	}
+}
