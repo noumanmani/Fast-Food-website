@@ -27,6 +27,8 @@ else{
 };
 
 
+
+
 // 'js/mian.js'
 const slides = document.querySelectorAll(".slides img");
 let slideindex = 0;
@@ -78,3 +80,4 @@ function setImg(){
 	return slider_img.setAttribute('src', "images/"+images[i]);
 	
 }
+
