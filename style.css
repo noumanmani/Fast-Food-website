@@ -64,23 +64,10 @@ margin:-4rem 0 0 20rem;
     nav{
         margin-top: 0;
     }
-    .onlist{
-    color: green;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 2%;
-
-
-    flex-wrap: wrap;
-    background-color: #ff1900;
-    }
-    .onlist .block ul{
-        width: 100vw;
-    }
-    .onlist .block ul li a{
+    .onlist ul li a{
         width: 100vw;
         display: inline;
+        text-decoration: none;
         
     }
     .on{
@@ -92,20 +79,22 @@ margin:-4rem 0 0 20rem;
     position: absolute;
     top: 0;
     left: 0;
-    background-color: white;
     width: 25%;
     height: 38%;
     padding-left: 1rem;
     display: none;
+    color: white;
+    flex-wrap: wrap;
 }
 .on{
     display: block;
-    position:absolute;
+    position:relative;
     top: 0;
     left: 0%;
     background-color: rgb(255, 255, 255);
     width: 25%;
     height: 38%;
+    text-decoration: none;
 } 
 /* ----------------------------------------------------toogle ---------------------- */
 .onlist #onlist-btn{
@@ -114,6 +103,10 @@ margin:-4rem 0 0 20rem;
     height: 3rem;
     margin:2rem 2rem;
     border-radius: 7px;
+}
+.onlist a{
+    text-decoration: none;
+    color: #f1f3f6;
 }
 .onlist hr{
     color: black;
@@ -154,14 +147,14 @@ li{
     border-radius: 5px;
 
 }
-.reorder:hover{
+.reorder :hover{
     letter-spacing: 7px;
 }
 
 
 /* slider  */
 .slider{
-	position: relative;
+	/* position: relative; */
 	width: 100vw;
 	margin: auto;
 	overflow: hidden;
@@ -200,6 +193,7 @@ right: 0;
 		opacity: 1;
 	}
 }
+/* explore-menu */
 .explore-menu{
     background-color: #f1f3f6;
     width: 100vw;
@@ -207,6 +201,7 @@ right: 0;
 	overflow: hidden;
     display: inline-block;
     padding-top: 4rem;
+    height: 100vh;
     
 }
 .explore-menu h2{
@@ -232,5 +227,29 @@ font-family: "Roboto";
     border: 1px solid white;
     border-radius:0rem 6rem  ;
     padding-top: 5px;
-    margin-top: 5rem; display: none;
+    margin-top: 5rem;
+}
+.explore-image{
+    height: 20%;
+    overflow: hidden;
+    height: 40vh;
+}
+.explore-menu button{ 
+    position: absolute;
+	top: 150%;
+	transform: translateY(-50%);
+	font-size: 2rem;
+	border: none;
+	background-color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	padding: 1px 1px;
+}
+.previous{
+left: 0;
+margin-left: 14px;
+}
+.Next{
+right: 0;  
+margin-right: 24px;
 }

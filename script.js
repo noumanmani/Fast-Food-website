@@ -81,3 +81,46 @@ function setImg(){
 	
 }
 
+//                  xplore-menu///
+// var explorerMenu = document.querySelectorAll(".explore-image img")
+//  let exploreindex = 7;
+//  if(explorerMenu.length){
+//  	explorerMenu[exploreindex].classList.add("displayExplore")
+// }
+var explorerMenu = document.querySelectorAll(".explore-image img")
+exploreindex = 0;
+
+function prevSlid(){
+	clearInterval(intervalId)	
+	exploreindex--;
+	showSlide(exploreindex)	
+	}
+	function nextSlid(){
+		exploreindex++
+		showSlide(exploreindex)
+	}
+	
+	
+	var explore_img = document.querySelector('.explore-img');
+	var images = ['image/food_1-removebg-preview.png', 'image/food_2-removebg-preview.png', 'image/food_4-removebg-preview.png', 'lopo.png', 'e.jpg'];
+	var i = 0;
+	
+	function prev(){
+		if(i <= 0) i = Image.length;	
+		i--;
+		return setImg();			 
+	}
+	
+	function next(){
+		if(i >= images.length-1) i = -1;
+		i++;
+		return setImg();			 
+	}
+	
+	function setImg(){
+		return slider_img.setAttribute('src', "images/"+images[i]);
+		
+	}
+
+
+
